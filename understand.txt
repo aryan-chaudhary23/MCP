@@ -1,3 +1,9 @@
 command used to add the server to claude desktop -> uv run fastmcp install claude-desktop src/fastmcp_demo/__init__.py:mcp --project D:\FastMCP_Demo --config-path "$env:LOCALAPPDATA\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude"
 command used to run the server -> uv run fastmcp run src/fastmcp_demo/__init__.py:mcp
 command used to run the dev server -> uv run fastmcp dev inspector src/fastmcp_demo/__init__.py  
+
+remember any changes you make will be vaise to automatically reflected if not run the add command again and dont forget to kill claude from bg tasks using task manager as it needs a restart
+
+now we added a summnarize tool which is working conditionlly ie. if anyone says summarize from 1 june to 2 feb it just gives summ of all expenses but if they say tell acbout grociers so for that we added a condiiton which alters the query using group by
+
+now another problem we faced is claude when adding expenses, chooses categories itself its not good as it can later give problems in data anlaysis, also sub categories are not working. So we made a json file storing all the categories and sub categories which is sent as a resource. To access that resource when writing prompt, click on + icon in connectors you see that file and add that json file then put the query
