@@ -1,0 +1,3 @@
+command used to add the server to claude desktop -> uv run fastmcp install claude-desktop src/fastmcp_demo/__init__.py:mcp --project D:\FastMCP_Demo --config-path "$env:LOCALAPPDATA\Packages\Claude_pzs8sxrjxfjjc\LocalCache\Roaming\Claude"
+command used to run the server -> uv run fastmcp run src/fastmcp_demo/__init__.py:mcp
+command used to run the dev server -> uv run fastmcp dev inspector src/fastmcp_demo/__init__.py  
